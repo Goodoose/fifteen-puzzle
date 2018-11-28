@@ -67,7 +67,7 @@
   document.addEventListener('keydown', (e) => {
     const tempNum = isEmptyCell();
     if (e.keyCode === 39) {
-      if (tempNum > 0 && tempNum - 1 !== 3 && tempNum - 1 !== 7 && tempNum - 1 !== 11) {
+      if (tempNum >= 0 && tempNum - 1 !== 3 && tempNum - 1 !== 7 && tempNum - 1 !== 11) {
         swap(tempNum - 1, tempNum);
       }
     }
@@ -78,7 +78,7 @@
     }
 
     if (e.keyCode === 40) {
-      if (tempNum - 4 > 0) {
+      if (tempNum - 4 >= 0) {
         swap(tempNum - 4, tempNum);
       }
     }
