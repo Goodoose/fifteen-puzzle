@@ -1,0 +1,77 @@
+.container .cellClass0, .container .cellClass1, .container .cellClass2, .container .cellClass3, .container .cellClass4, .container .cellClass5, .container .cellClass6, .container .cellClass7, .container .cellClass8, .container .cellClass9, .container .cellClass10, .container .cellClass11, .container .cellClass12, .container .cellClass13, .container .cellClass14, .container .cellClass15 {
+  font-size: 7vh;
+  padding-top: 12%;
+  height: 10vh;
+  border: 1px solid red;
+  background-color: lightgoldenrodyellow;
+  border-radius: 1vh; }
+
+.headlien {
+  font-size: 10vh;
+  text-align: center; }
+
+.container {
+  border: 10px solid grey;
+  border-radius: 1vh;
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(10px, 1fr)); }
+  .container .cellClass0 {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .container .cellClass1 {
+    grid-column: 2/3;
+    grid-row: 1/2; }
+  .container .cellClass2 {
+    grid-column: 3/4;
+    grid-row: 1/2; }
+  .container .cellClass3 {
+    grid-column: 4/5;
+    grid-row: 1/2; }
+  .container .cellClass4 {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .container .cellClass5 {
+    grid-column: 2/3;
+    grid-row: 2/3; }
+  .container .cellClass6 {
+    grid-column: 3/4;
+    grid-row: 2/3; }
+  .container .cellClass7 {
+    grid-column: 4/5;
+    grid-row: 2/3; }
+  .container .cellClass8 {
+    grid-column: 1/2;
+    grid-row: 3/4; }
+  .container .cellClass9 {
+    grid-column: 2/3;
+    grid-row: 3/4; }
+  .container .cellClass10 {
+    grid-column: 3/4;
+    grid-row: 3/4; }
+  .container .cellClass11 {
+    grid-column: 4/5;
+    grid-row: 3/4; }
+  .container .cellClass12 {
+    grid-column: 1/2;
+    grid-row: 4/5; }
+  .container .cellClass13 {
+    grid-column: 2/3;
+    grid-row: 4/5; }
+  .container .cellClass14 {
+    grid-column: 3/4;
+    grid-row: 4/5; }
+  .container .cellClass15 {
+    grid-column: 4/5;
+    grid-row: 4/5; }
+  .container .nonDecoration {
+    height: 10vh;
+    border: 0;
+    background-color: none; }
+
+.buttonShafl {
+  display: block;
+  margin: auto; }
