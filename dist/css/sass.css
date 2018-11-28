@@ -70,7 +70,7 @@
   .container .nonDecoration {
     height: 10vh;
     border: 0;
-    background-color: none; }
+    background-color: #fff; }
 
 .buttonShafl {
   display: block;
