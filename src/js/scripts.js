@@ -89,7 +89,7 @@
       }
     }
     renderCells();
-    setTimeout(vinnerCombination(), 1000);
+    setTimeout(vinnerCombination, 0);
   });
 
   const buttonShafl = document.createElement('button');
