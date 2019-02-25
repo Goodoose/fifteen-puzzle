@@ -1,13 +1,4 @@
-%itemcellClass {
-  font-size: 7vh; 
-  padding-top: 12%;
-  height: 10vh;
-  border: 1px solid red;
-  background-color: lightgoldenrodyellow;
-  border-radius: 1vh;
-}
-
-.headlien{
+.headline {
   font-size: 10vh;
   text-align: center;
 }
@@ -20,112 +11,23 @@
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(auto-fill, minmax(10px, 1fr));
-  
-  .cellClass0 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    @extend %itemcellClass;
-  }
+  grid-template-rows: repeat(4, 1fr);
 
-  .cellClass1 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    @extend %itemcellClass;
-  }
-
-  .cellClass2 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    @extend %itemcellClass;
-  }
-
-  .cellClass3 {
-    grid-column: 4/5;
-    grid-row: 1/2;
-    @extend %itemcellClass;
-  }
-
-  .cellClass4 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    @extend %itemcellClass;
-  }
-
-  .cellClass5 {
-    grid-column: 2/3;
-    grid-row:2/3;
-    @extend %itemcellClass;
-  }
-
-  .cellClass6 {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    @extend %itemcellClass;
-  }
-
-  .cellClass7 {
-    grid-column: 4/5;
-    grid-row: 2/3;
-    @extend %itemcellClass;
-  }
-
-  .cellClass8 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    @extend %itemcellClass;
-  }
-
-  .cellClass9 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    @extend %itemcellClass;
-  }
-
-  .cellClass10 {
-    grid-column: 3/4;
-    grid-row: 3/4;
-    @extend %itemcellClass;
-  }
-
-  .cellClass11 {
-    grid-column: 4/5;
-    grid-row: 3/4;
-    @extend %itemcellClass;
-  }
-
-  .cellClass12 {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    @extend %itemcellClass;
-  }
-
-  .cellClass13 {
-    grid-column: 2/3;
-    grid-row: 4/5;
-    @extend %itemcellClass;
-  }
-
-  .cellClass14 {
-    grid-column: 3/4;
-    grid-row: 4/5;
-    @extend %itemcellClass;
-  }
-
-  .cellClass15 {
-    grid-column: 4/5;
-    grid-row: 4/5;
-    @extend %itemcellClass;
-  }
-  
-  .nonDecoration {
+  .cell__container {
+    font-size: 7vh; 
+    padding-top: 12%;
     height: 10vh;
-    border: 0;
-    background-color: #fff;
+    border: 1px solid red;
+    background-color: lightgoldenrodyellow;
+    border-radius: 1vh;
   }
 }
 
-.buttonShafl {
+.button__shafl {
   display: block;
   margin: auto;
+  margin-top: 15px;
+  font-size: 3vw;
+  border-radius: 5px;
+  background-color: antiquewhite;
 }

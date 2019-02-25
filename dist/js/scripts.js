@@ -30,7 +30,7 @@
     for (let i = 0; i < cells.length; i++) {
       const cellPazzle = document.createElement('div');
       cellPazzle.textContent = cells[i].name;
-      cellPazzle.classList = `cellClass${i}`;
+      cellPazzle.classList = 'cell__container';
       container.appendChild(cellPazzle);
     }
   };
@@ -52,13 +52,13 @@
     }
   };
 
-  const vinnerCombination = function vinnerCombination() {
+  const winnerCombination = function vinnerCombination() {
     for (let i = 0; i < cellQuantity - 1; i++) {
       if (i !== cells[i].id) {
         return;
       }
     }
-    alert('You Vinner!!!');
+    alert('You Winner!!!');
   };
 
   createCells();
@@ -89,11 +89,11 @@
       }
     }
     renderCells();
-    setTimeout(vinnerCombination, 0);
+    setTimeout(winnerCombination, 0);
   });
 
   const buttonShafl = document.createElement('button');
-  buttonShafl.classList.add('buttonShafl');
+  buttonShafl.classList.add('button__shafl');
   buttonShafl.textContent = 'Shafl';
   document.body.appendChild(buttonShafl);
   buttonShafl.addEventListener('click', () => {

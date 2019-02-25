@@ -30,7 +30,7 @@
     for (let i = 0; i < cells.length; i++) {
       const cellPazzle = document.createElement('div');
       cellPazzle.textContent = cells[i].name;
-      cellPazzle.classList = `cellClass${i}`;
+      cellPazzle.classList = 'cell__container';
       container.appendChild(cellPazzle);
     }
   };
@@ -52,13 +52,13 @@
     }
   };
 
-  const vinnerCombination = function vinnerCombination() {
+  const winnerCombination = function vinnerCombination() {
     for (let i = 0; i < cellQuantity - 1; i++) {
       if (i !== cells[i].id) {
         return;
       }
     }
-    alert('You Vinner!!!');
+    alert('You Winner!!!');
   };
 
   createCells();
@@ -89,11 +89,39 @@
       }
     }
     renderCells();
-    setTimeout(vinnerCombination, 0);
+    setTimeout(winnerCombination, 0);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    const tempNum = isEmptyCell();
+    if (e.keyCode === 39) {
+      if (tempNum > 0 && tempNum - 1 !== 3 && tempNum - 1 !== 7 && tempNum - 1 !== 11) {
+        swap(tempNum - 1, tempNum);
+      }
+    }
+    if (e.keyCode === 37) {
+      if (tempNum < 15 && tempNum + 1 !== 4 && tempNum + 1 !== 8 && tempNum + 1 !== 12) {
+        swap(tempNum + 1, tempNum);
+      }
+    }
+
+    if (e.keyCode === 40) {
+      if (tempNum - 4 >= 0) {
+        swap(tempNum - 4, tempNum);
+      }
+    }
+
+    if (e.keyCode === 38) {
+      if (tempNum + 4 < 16) {
+        swap(tempNum + 4, tempNum);
+      }
+    }
+    renderCells();
+    setTimeout(winnerCombination, 0);
   });
 
   const buttonShafl = document.createElement('button');
-  buttonShafl.classList.add('buttonShafl');
+  buttonShafl.classList.add('button__shafl');
   buttonShafl.textContent = 'Shafl';
   document.body.appendChild(buttonShafl);
   buttonShafl.addEventListener('click', () => {
